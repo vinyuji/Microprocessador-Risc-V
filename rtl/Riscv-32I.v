@@ -4,7 +4,7 @@ module RiscV_CPU (
 );
 
     // ==============================
-    // WIRES INTERNOS
+    // Wire Interno
     // ==============================
 
     wire [31:0] pc;
@@ -48,7 +48,7 @@ module RiscV_CPU (
     );
 
     // ==============================
-    // Instruction Memory
+    // Instrucao de Memoria
     // ==============================
 
     MemoriaIntrucao imem (
@@ -57,7 +57,7 @@ module RiscV_CPU (
     );
 
     // ==============================
-    // Control Unit
+    // Unidade de Controle
     // ==============================
 
     UnidadeControle control (
@@ -73,7 +73,7 @@ module RiscV_CPU (
     );
 
     // ==============================
-    // REGISTER FILE
+    // Registrador de Arquivo
     // ==============================
 
     wire [31:0] writeBackData;
@@ -92,7 +92,7 @@ module RiscV_CPU (
     );
 
     // ==============================
-    // IMMEDIATE GENERATOR
+    // Gerador de Imediato
     // ==============================
 
     GeradorImediato immGen (
@@ -129,7 +129,7 @@ module RiscV_CPU (
     );
 
     // ==============================
-    // BRANCH UNIT
+    // Unidade Branch
     // ==============================
 
     UnidadeBranch branch_unit (
@@ -141,7 +141,7 @@ module RiscV_CPU (
     );
 
     // ==============================
-    // DATA MEMORY
+    // Memoria Data
     // ==============================
 
     DataMemoria dmem (
