@@ -3,10 +3,10 @@ module MemoriaIntrucao (
     output wire [31:0] instrucao    
 );
 
-    // 256 instruções de 32 bits 
+    // 256 instrucaes de 32 bits 
     reg [31:0] memoria [0:255];
 
-    // Inicialização 
+    // Inicializacao 
     integer i;
     initial begin
         for (i = 0; i < 256; i = i + 1)
